@@ -1,27 +1,32 @@
-# Utah Mammoth NHL Analytics
+# NHL Shot Analytics
 
-A FastAPI backend and React TypeScript frontend application for querying and displaying Utah Mammoth NHL team information.
+![Project Status](https://img.shields.io/badge/status-active-success)
+![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.68+-green.svg)
+![React](https://img.shields.io/badge/React-18-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-4.0+-blue)
 
-## Project Structure
+A full-stack analytics dashboard for the **Utah Mammoth**, the newest NHL franchise. This application provides real-time roster insights, team statistics, and game data by integrating directly with the official NHL API.
 
-```
+It features a high-performance **FastAPI** backend for data processing and a responsive **React TypeScript** frontend for interactive visualization.
+
+---
+
+## 🏗️ Project Structure
+
+```text
 NHLAnalytics/
-├── backend/                 # FastAPI backend
-│   ├── main.py             # Main FastAPI application
+├── backend/                 # FastAPI application (Data Processing & API Proxy)
+│   ├── main.py             # Application entry point
 │   └── requirements.txt    # Python dependencies
-├── frontend/               # React TypeScript frontend
-│   ├── src/                # React source code
-│   │   ├── components/     # React components
-│   │   ├── services/       # API service
-│   │   ├── types/          # TypeScript type definitions
-│   │   ├── App.tsx         # Main App component
-│   │   ├── App.css         # Styles
-│   │   └── index.tsx       # Entry point
-│   ├── public/             # Static files
+├── frontend/               # React TypeScript application (UI Layer)
+│   ├── src/                # Source code
+│   │   ├── components/     # Reusable UI components
+│   │   ├── services/       # API integration services
+│   │   └── types/          # TypeScript interfaces
 │   ├── package.json        # Node.js dependencies
 │   └── tsconfig.json       # TypeScript configuration
-├── dataExploration/        # Jupyter notebook for data exploration
-│   └── nhlAnalyticsV1.ipynb
+├── dataExploration/        # Jupyter notebooks for initial data analysis
 ├── start_react_app.bat     # Windows startup script
 └── README.md
 ```
