@@ -21,7 +21,7 @@ from src.features.feature_engineering import (
 )
 
 print("Loading raw data...")
-INPUT_FILE = os.path.join(os.path.dirname(__file__), "..", "data", "raw", "nhl_raw_plays_2019_2023.parquet")
+INPUT_FILE = os.path.join(os.path.dirname(__file__), "..", "data", "raw", "nhl_raw_plays.parquet")
 df_raw = pd.read_parquet(INPUT_FILE)
 
 print("Filtering shots and creating target...")
